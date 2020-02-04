@@ -1,15 +1,7 @@
-{{!-- <li>
+<p>
 	{{burger_name}}
 
-	<button class="devour" data-id="{{this.id}}">Devour It!!</button>
+	<button class="devour" data-id="{{id}}" data-devoured="devoured">Devour It!!</button>
 	{{#if devoured}}Devour It!{{/if}}
-</li> --}}
+</p>
 
-<div class="card">
-  <h5>{{burger_name}}</h5>
-  <img src="../../../public/assets/img/cute_burg.jpg" class="card-img-top" alt="burg">
-  <div class="card-body">
-	<button class="devour" data-id="{{id}}" data-devoured="{{devoured}}">Devour It!!</button>
-	{{#if devoured}}Devour It!{{/if}}
-  </div>
-</div>
