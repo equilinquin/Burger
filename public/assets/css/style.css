@@ -1,7 +1,21 @@
 body {
     background-image: url("../img/cute_burg.jpg");
-    background-color: darkgoldenrod;
-};
+}
 title {
     margin-top: 100px;
+}
+i {
+    margin: 5px;
+}
+form {
+    margin: 10px
+}
+.container {
+    margin: 100px;
+}
+.card {
+    background-color: darksalmon;
+}
+.row {
+    margin-top: 30px;
 }

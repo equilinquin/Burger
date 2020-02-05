@@ -7,16 +7,14 @@ $(function() {
     const newDevourState = {
       devoured: newDevoured
     };
-    console.log(newDevourState);
+    if($(this)[0].innerText == "Devour It!!") {
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newDevourState
     }).then(function() {
-      $(this)
-        .parent()
-        .remove();
-      //location.reload();
+      location.reload();
     });
+  };
   });
 
   $(".create-form").on("submit", function(event) {

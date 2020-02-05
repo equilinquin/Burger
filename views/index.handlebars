@@ -1,40 +1,52 @@
 <div class="container">
-    <h1 class="title text-center">Eat Da Burger</h1>
+    <h1 class="title text-center">
+        <i class="far fa-grin-squint-tears"></i>
+        <i class="far fa-grin-squint-tears"></i>
+        Eat Da Burger
+        <i class="far fa-grin-squint-tears"></i>
+        <i class="far fa-grin-squint-tears"></i>
+    </h1>
     <div class="row">
         <div class="col-4 text-center mx-auto">
-            <div class="card">
+            <div class="card shadow">
                 <form class="create-form">
                     <div class="form-group">
                         <label for="burg">Add Burger Order:</label>
                         <input type="text" id="burg" name="name">
                     </div>
-                    <button type="submit">ORDER IN</button>
+                    <button class="btn btn-info" type="submit">
+                        <i class="fas fa-hamburger"></i>ORDER IN
+                        </button>
                 </form>
             </div>
         </div>
         <div class="col-4 text-center bg-transparant mx-auto">
-            <div class="card">
-                <h3>Order Up!</h3>
+            <div class="card shadow">
+                <h3>
+                    <i class="fas fa-concierge-bell"></i>Order Up!
+                </h3>
                 <div class="card-body">
                     <span>
                         {{#each burger}}
-                        {{#if devoured}}
+                        {{#unless devoured}}
                         {{> burger/burger-block devoured=1}}
-                        {{/if}}
+                        {{/unless}}
                         {{/each}}
                     </span>
                 </div>
             </div>
         </div>
         <div class="col-4 text-center bg-transparant mx-auto">
-            <div class="card">
-                <h3>Too Full!</h3>
+            <div class="card shadow">
+                <h3>
+                    <i class="fas fa-skull-crossbones"></i>Too Full!
+                    </h3>
                 <div class="card-body">
                     <span>
                         {{#each burger}}
-                        {{#unless devoured}}
+                        {{#if devoured}}
                         {{> burger/burger-block devoured=0}}
-                        {{/unless}}
+                        {{/if}}
                         {{/each}}
                     </span>
                 </div>
