@@ -17,10 +17,10 @@
                 <h3>Order Up!</h3>
                 <div class="card-body">
                     <span>
-                        {{#each burgers}}
-                        {{#unless devoured}}
-                        {{> burgers/burger-block devoured=true}}
-                        {{/unless}}
+                        {{#each burger}}
+                        {{#if devoured}}
+                        {{> burger/burger-block devoured=1}}
+                        {{/if}}
                         {{/each}}
                     </span>
                 </div>
@@ -31,9 +31,9 @@
                 <h3>Too Full!</h3>
                 <div class="card-body">
                     <span>
-                        {{#each burgers}}
+                        {{#each burger}}
                         {{#unless devoured}}
-                        {{> burgers/burger-block devoured=false}}
+                        {{> burger/burger-block devoured=0}}
                         {{/unless}}
                         {{/each}}
                     </span>

@@ -1,9 +1,9 @@
 const express = require("express");
-const burger = require("../models/burger.js");
+const burgers = require("../models/burger.js");
 const router = express.Router();
 
 router.get("/", function(req, res) {
-  burger.all(function(data) {
+  burgers.selectAll(function(data) {
     let hbsObject = {
       burger: data
     };
@@ -13,7 +13,8 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/burgers", function(req, res) {
-  burger.create(["burger_name", "devoured"], [req.body.name, req.body.devoured], function(result) {
+  burgers.insertOne(["burger_name", "devoured"], [req.body.name, req.params.devoured], function(result) {
+    console.log(req.params);
     res.json({ id: result.insertId });
   });
 });
@@ -22,12 +23,12 @@ router.put("/api/burgers/:id", function(req, res) {
     const condition = "id = " + req.params.id;
   
     console.log("condition", condition);
-  
-    burgers.update({
-      devoured: req.body.devoured
+  console.log(req.body);
+    burgers.updateOne({
+      devoured: req.body.devoured,
     }, condition, function(result) {
       if (result.changedRows == 0) {
-        return res.status(404).end();
+        res.status(404).end();
       } else {
         res.status(200).end();
       }
