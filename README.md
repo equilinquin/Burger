@@ -21,21 +21,33 @@ https://stark-gorge-80987.herokuapp.com/
 Follow instructions 5 and 6 in Local Deployemnt.
 
 ## Built with
+
 -Node
+
 -JawsDB
+
 -Heroku
+
 -HTML
+
 -CSS
+
 -Javascript
+
 -jQuery
+
 -Font Awesome
+
 -Bootstrap
+
 -MySql Workbench
 
 ## Packages Used
 
 -Express
+
 -Express Handlebars
+
 -MySQL
 
 ## Images of Deployed app
