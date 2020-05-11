@@ -1,10 +1,9 @@
 <p>
 	{{burger_name}}
 
-	<button class="devour btn btn-success" data-id="{{id}}" data-devoured="{{devoured}}">
-		<i class="fas fa-utensils"></i>
-		{{#if devoured}}Devour It!!{{else}}Done{{/if}}
-	</button>
+	{{#if devoured}}<button class="devour btn btn-success" data-id="{{id}}" data-devoured="{{devoured}}">
+		<i class="fas fa-utensils"></i>Devour It!!
+	</button>{{/if}}
 	
 </p>
 
