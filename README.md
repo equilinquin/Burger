@@ -1,7 +1,7 @@
 # Burger
 
 ## Description
-This app connects to a database and gives a user access to add to the database on an HTML page.  Once on the page, the user will be welcomed by a burger image and an input field.  In the input field, the user can add any burger they want.  Once the "Order In" button is pressed, the burger will move to the "Order Up" column.  If the "Devour It!" button is pressed, the burger will move to the "Too Much" column with a "Done" button.  The "Done" button won't do anything.  The "Too Much" column list the burgers from the database after they've been 'devoured'.  
+This app connects to a database and gives a user access to add to the database on an HTML page.  Once on the page, the user will be welcomed by a burger image and an input field.  In the input field, the user can add any burger they want.  Once the "Order In" button is pressed, the burger will move to the "Order Up" column.  If the "Devour It!" button is pressed, the burger will move to the "Too Much" column with a "Done" button.  The "Done" button won't do anything.  The "Too Full" column list the burgers from the database after they've been 'devoured'.  
 
 ## Local Deployment
 
