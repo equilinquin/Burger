@@ -19,7 +19,7 @@ This app connects to a database and gives a user access to add to the database o
 
 ## Deployable App
 You can find the deployed app here:
-https://stark-gorge-80987.herokuapp.com/
+https://burgerappegq.herokuapp.com/
 
 Follow instructions 5 and 6 in Local Deployemnt.
 
