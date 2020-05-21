@@ -13,7 +13,7 @@ This app connects to a database and gives a user access to add to the database o
 3. Run code by typing: `node server.js` or `node server`.
 4. Open web brower and go to: http://localhost:8080
 5. Add burger of choice and click "Order In".
-6. Click "Devour It!" when burger moves to "Order Up" column to move it to "Too Much" column.
+6. Click "Devour It!" when burger moves to "Order Up" column to move it to "Too Full" column.
 
 
 
